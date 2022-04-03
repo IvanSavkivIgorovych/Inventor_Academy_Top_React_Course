@@ -1,5 +1,7 @@
 function calculate(input) {
-  let [leftPart, operator, rightPart] = input.split(" ");
+  if (typeof input !== string) return "";
+
+  const [leftPart, operator, rightPart] = input.split(" ");
   leftPart = leftPart.split("").length;
   rightPart = rightPart.split("").length;
 
